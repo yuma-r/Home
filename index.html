@@ -15,9 +15,17 @@
 			}
 	
 			header {
+				/*text-align: center;*/
+				
 				padding: 3rem 1.5rem;
 				background: linear-gradient(135deg, #1f2933, #111827);
-				text-align: center;
+				background-image: url('Images/bg_01.png');
+				/*background-attachment: fixed;*/
+				background-size: cover;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				
+				display: grid;
 			}
 	
 			header h1 {
@@ -25,11 +33,48 @@
 				margin-bottom: 0.5rem;
 			}
 	
-			header p {
-				max-width: 700px;
-				margin: 0 auto;
-				color: #cbd5e1;
+			header {
+				position: relative;
+				background-image: url('Images/bg_01.png');
+				background-size: cover;
+				background-repeat: no-repeat;
 			}
+			
+			/* DAS ist der entscheidende Teil */
+			.header-content {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 3rem 1.5rem;
+			
+				display: grid;
+				grid-template-columns: 1fr auto;
+				gap: 2.5rem;
+				align-items: center;
+			}
+			
+			.container {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 3rem 1.5rem;
+			}
+
+
+			
+			.header-text h1 {
+				margin: 0;
+			}
+			
+			.header-text p {
+				margin-top: 1rem;
+				max-width: 600px;
+			}
+			
+			.header-image img {
+				width: 200px;
+				border-radius: 8px;
+			}
+
+
 	
 			section {
 				max-width: 1000px;
@@ -41,11 +86,6 @@
 				border-bottom: 2px solid #334155;
 				padding-bottom: 0.5rem;
 				margin-bottom: 1.5rem;
-			}
-	
-			.title {
-				display: grid;
-				padding: 3rem 1.5rem;
 			}
 			
 			.projects {
@@ -93,25 +133,21 @@
 			}
 		</style>
 	</head>
+	
 	<body>
 		<header>
-			<div class="title">
-				<table>
-					<tr>
-						<td>
-							<h1>Yuma Rösner</h1>
-							<h1>Game Programming Portfolio</h1>
-							<p>
-								text1
-							</p>
-						</td>
-						<td>
-							<img src="Images/Yuma.png" width=200 hight=200></img>
-						</td>
-					</tr>
-				</table>
+			<div class="header-content">
+				<div>
+					<h1>Yuma Rösner</h1>
+					<h1>Game Programming Portfolio</h1>
+					<p>text1</p>
+				</div>
+		
+				<img src="Images/Yuma.png" alt="Yuma" width="200">
 			</div>
 		</header>
+
+
 		
 		<section>
 			<h2>Über mich</h2>
