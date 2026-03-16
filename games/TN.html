@@ -1,153 +1,44 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Game Programming Portfolio – Yuma</title>
-	
-		<style>
-			body {
-				margin: 0;
-				font-family: Arial, Helvetica, sans-serif;
-				background-color: #0f1115;
-				color: #eaeaea;
-				line-height: 1.6;
-			}
-	
-			header {
-				/*text-align: center;*/
-				
-				padding: 3rem 1.5rem;
-				background: linear-gradient(135deg, #1f2933, #111827);
-				background-image: url('Images/bg_01.png');
-				/*background-attachment: fixed;*/
-				background-size: cover;
-				background-size: 100% auto;
-				background-repeat: no-repeat;
-				
-				display: grid;
-			}
-	
-			header h1 {
-				font-size: 2.5rem;
-				margin-bottom: 0.5rem;
-			}
-	
-			header {
-				position: relative;
-				background-image: url('Images/bg_01.png');
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			
-			/* DAS ist der entscheidende Teil */
-			.header-content {
-				max-width: 1000px;
-				margin: 0 auto;
-				padding: 3rem 1.5rem;
-			
-				display: grid;
-				grid-template-columns: 1fr auto;
-				gap: 2.5rem;
-				align-items: center;
-			}
-			
-			.container {
-				max-width: 1000px;
-				margin: 0 auto;
-				padding: 3rem 1.5rem;
-			}
-
-
-			
-			.header-text h1 {
-				margin: 0;
-			}
-			
-			.header-text p {
-				margin-top: 1rem;
-				max-width: 600px;
-			}
-			
-			.header-image img {
-				width: 200px;
-				border-radius: 8px;
-			}
-
-
-	
-			section {
-				max-width: 1000px;
-				margin: auto;
-				padding: 3rem 1.5rem;
-			}
-	
-			h2 {
-				border-bottom: 2px solid #334155;
-				padding-bottom: 0.5rem;
-				margin-bottom: 1.5rem;
-			}
-			
-			.projects {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-				gap: 1.5rem;
-			}
-	
-			.project {
-				background-color: #161b22;
-				padding: 1.5rem;
-				border-radius: 8px;
-			}
-	
-			.project h3 {
-				margin-top: 0;
-			}
-	
-			.project p {
-				font-size: 0.95rem;
-				color: #d1d5db;
-			}
-	
-			.project a {
-				display: inline-block;
-				margin-top: 0.8rem;
-				color: #38bdf8;
-				text-decoration: none;
-			}
-	
-			.project a:hover {
-				text-decoration: underline;
-			}
-	
-			ul {
-				padding-left: 1.2rem;
-			}
-	
-			footer {
-				text-align: center;
-				padding: 2rem;
-				background-color: #0b0e13;
-				font-size: 0.9rem;
-				color: #94a3b8;
-			}
-			
-			.row {
-				
-				background-size: cover;       /* fills the row */
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-		</style>
+		
+		<link rel="stylesheet" href="../Css/style.css">
 	</head>
 	
 	<body>
-
-		<header>
-			<a href="../index.html">
-				<button>Go Home</button>
+		<div class="Nav">
+			<a href="../games/PSEV.html" class="NavContent">
+				<button>
+					<span>Project S.E.V</span>
+				</button>
 			</a>
-		</header>	
+			<a href="../games/alb.html" class="NavContent">
+				<button>
+					<span>Always look back</span>
+				</button>
+			</a>
+			<a href="../games/TN.html" class="NavContent">
+				<button>
+					<span>Twisted Nights</span>
+				</button>
+			</a>
+			<a href="../games/batg.html" class="NavContent">
+				<button>
+					<span>Block across the gap</span>
+				</button>
+			</a>
+			<a href="../games/DC.html" class="NavContent">
+				<button>
+					<span>Desctop Craft</span>
+				</button>
+			</a>
+		</div>
+<br/>
+<br/>
+<br/>
 		<div>
 			<h2>Twisted Nights</h2>
 		
@@ -159,6 +50,100 @@
 							<td>
 								<img src="../Images/TN-01.png" alt="" width="400" height="250">
 								<img src="../Images/TN-02.png" alt="" width="250" height="250">
+								<video loop autoplay muted id="vid" src="../videos/TN-01.mp4" width="250" height="250"/>
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Details:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								This is a point-and-click / sit-and-survive game made in Unity, inspired by the horror game series Five Nights at Freddy’s.
+							</td>
+							<td>
+								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Game Idea:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+							</td>
+							<td>
+								You take on your first night shift in a restaurant where robots provide the entertainment. The goal is to survive the night without being killed by the robots.
+								Designing a detailed layout of the building was particularly interesting.
+								I learned how to bind UI elements to the position of objects in three-dimensional space.
+								
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Movement:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								By clicking on markers, you move to that position and additional markers appear depending on the current position.
+								
+							</td>
+							<td>
+								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Game Mechanics:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+							</td>
+							<td>
+								Two camera systems each display a camera feed on a monitor. The cameras can be switched by clicking buttons on the displayed floor plan. Another mechanic is recharging and swapping batteries in a flashlight. One enemy can be driven away by the beam of light, while the other enemy kills you.
+								
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>AI:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								A global move timer determines the interval at which enemies attempt to move. When the timer reaches zero, a random number from 0 to 20 is chosen. If this number is less than or equal to the enemy’s difficulty level, it moves to the next point. The timer then resets.
+								
+							</td>
+							<td>
+								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Assets:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<p>
+									<h3>Unity Asset Store:</h3>
+									<a href="https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488" target="#">Quick Outline [Chris Nolet]</a>
+							</td>
+							<td>
+								<p>
+									<h3>Polyhaven:</h3>
+									<a href="https://polyhaven.com/a/rusty_metal_sheet" target="#">Rusty Metal Sheet</a> <br/>
+									<a href="https://polyhaven.com/a/painted_metal_shutter" target="#">Painted Metal Shutter</a> <br/>
+									<a href="https://polyhaven.com/a/concrete_wall_001" target="#">Concrete Wall 001</a> <br/>
+									<a href="https://polyhaven.com/a/gravel_concrete_03" target="#">Gravel Concrete 03</a> <br/>
+									<a href="https://polyhaven.com/a/square_floor" target="#">Square Floor</a>
+								</p>
 							</td>
 						</tr>
 					</tbody>

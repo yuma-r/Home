@@ -4,150 +4,41 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Game Programming Portfolio – Yuma</title>
-	
-		<style>
-			body {
-				margin: 0;
-				font-family: Arial, Helvetica, sans-serif;
-				background-color: #0f1115;
-				color: #eaeaea;
-				line-height: 1.6;
-			}
-	
-			header {
-				/*text-align: center;*/
-				
-				padding: 3rem 1.5rem;
-				background: linear-gradient(135deg, #1f2933, #111827);
-				background-image: url('Images/bg_01.png');
-				/*background-attachment: fixed;*/
-				background-size: cover;
-				background-size: 100% auto;
-				background-repeat: no-repeat;
-				
-				display: grid;
-			}
-	
-			header h1 {
-				font-size: 2.5rem;
-				margin-bottom: 0.5rem;
-			}
-	
-			header {
-				position: relative;
-				background-image: url('Images/bg_01.png');
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			
-			/* DAS ist der entscheidende Teil */
-			.header-content {
-				max-width: 1000px;
-				margin: 0 auto;
-				padding: 3rem 1.5rem;
-			
-				display: grid;
-				grid-template-columns: 1fr auto;
-				gap: 2.5rem;
-				align-items: center;
-			}
-			
-			.container {
-				max-width: 1000px;
-				margin: 0 auto;
-				padding: 3rem 1.5rem;
-			}
-
-
-			
-			.header-text h1 {
-				margin: 0;
-			}
-			
-			.header-text p {
-				margin-top: 1rem;
-				max-width: 600px;
-			}
-			
-			.header-image img {
-				width: 200px;
-				border-radius: 8px;
-			}
-
-
-	
-			section {
-				max-width: 1000px;
-				margin: auto;
-				padding: 3rem 1.5rem;
-			}
-	
-			h2 {
-				border-bottom: 2px solid #334155;
-				padding-bottom: 0.5rem;
-				margin-bottom: 1.5rem;
-			}
-			
-			.projects {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-				gap: 1.5rem;
-			}
-	
-			.project {
-				background-color: #161b22;
-				padding: 1.5rem;
-				border-radius: 8px;
-			}
-	
-			.project h3 {
-				margin-top: 0;
-			}
-	
-			.project p {
-				font-size: 0.95rem;
-				color: #d1d5db;
-			}
-	
-			.project a {
-				display: inline-block;
-				margin-top: 0.8rem;
-				color: #38bdf8;
-				text-decoration: none;
-			}
-	
-			.project a:hover {
-				text-decoration: underline;
-			}
-	
-			ul {
-				padding-left: 1.2rem;
-			}
-	
-			footer {
-				text-align: center;
-				padding: 2rem;
-				background-color: #0b0e13;
-				font-size: 0.9rem;
-				color: #94a3b8;
-			}
-			
-			.row {
-				
-				background-size: cover;       /* fills the row */
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-		</style>
+		
+		<link rel="stylesheet" href="../Css/style.css">
 	</head>
 	
 	<body>
-
-		<header>
-			<a href="../index.html">
-				<button>Go Home</button>
+		<div class="Nav">
+			<a href="../games/PSEV.html" class="NavContent">
+				<button>
+					<span>Project S.E.V</span>
+				</button>
 			</a>
-		</header>	
+			<a href="../games/alb.html" class="NavContent">
+				<button>
+					<span>Always look back</span>
+				</button>
+			</a>
+			<a href="../games/TN.html" class="NavContent">
+				<button>
+					<span>Twisted Nights</span>
+				</button>
+			</a>
+			<a href="../games/batg.html" class="NavContent">
+				<button>
+					<span>Block across the gap</span>
+				</button>
+			</a>
+			<a href="../games/DC.html" class="NavContent">
+				<button>
+					<span>Desctop Craft</span>
+				</button>
+			</a>
+		</div>
+<br/>
+<br/>
+<br/>
 		<div>
 			<h2>Desctop Craft</h2>
 		
@@ -158,6 +49,31 @@
 						<tr class="row" style="background-image: url('Images/bg_01.png');">
 							<td>
 								<img src="../Images/dc-01.png" alt="" width="400" height="250">
+								<video loop autoplay muted id="vid" src="../videos/TN-01.mp4" width="250" height="250"/>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<h2>Detiles</h2>
+								This game is a Simple 2D sandbox where you can brake blocks and play with the items.<br/>
+								it runs on your desktop, with a transparent background, where you can click thru.<br/>
+								the game is inspiered by "Minecraft" and "Desctop budy".
+								
+								<h2>Physics</h2>
+								The Game uses the default unity physics engine with rigidbody2D.
+								
+								<h2>Assets</h2>
+								<p>
+									<h3>Unity Asset Store:</h3>
+									<a href="https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/pixelation-65554" target="#">fullscreen camera effects [Dmitry Timofeev]</a> <br/>
+									<a href="https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488" target="#">Quick Outline [Chris Nolet]</a> <br/>
+									<h3>Polyhaven:</h3>
+									<a href="https://polyhaven.com/a/rusty_metal_sheet" target="#">Rusty Metal Sheet</a> <br/>
+									<a href="https://polyhaven.com/a/painted_metal_shutter" target="#">Painted Metal Shutter</a> <br/>
+									<a href="https://polyhaven.com/a/concrete_wall_001" target="#">Concrete Wall 001</a> <br/>
+									<a href="https://polyhaven.com/a/gravel_concrete_03" target="#">Gravel Concrete 03</a> <br/>
+									<a href="https://polyhaven.com/a/square_floor" target="#">Square Floor</a> <br/>
+								</p>
 							</td>
 						</tr>
 					</tbody>

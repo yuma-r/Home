@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Game Programming Portfolio – Yuma</title>
+		
+		<link rel="stylesheet" href="../Css/style.css">
+	</head>
+	
+	<body>
+		<div class="Nav">
+			<a href="../games/PSEV.html" class="NavContent">
+				<button>
+					<span>Project S.E.V</span>
+				</button>
+			</a>
+			<a href="../games/alb.html" class="NavContent">
+				<button>
+					<span>Always look back</span>
+				</button>
+			</a>
+			<a href="../games/TN.html" class="NavContent">
+				<button>
+					<span>Twisted Nights</span>
+				</button>
+			</a>
+			<a href="../games/batg.html" class="NavContent">
+				<button>
+					<span>Block across the gap</span>
+				</button>
+			</a>
+			<a href="../games/DC.html" class="NavContent">
+				<button>
+					<span>Desctop Craft</span>
+				</button>
+			</a>
+		</div>
+<br/>
+<br/>
+<br/>
+		<div style="">
+			<header style="background-image: url('../Images/psev-01.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+					<a href="../index.html">
+						<button>Go Home</button>
+					</a>
+					<a href="https://maker-studio.itch.io/project-s-e-v" target="#">
+						<button>Open page</button>
+					</a>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+			</header>	
+			<br/>
+		</div>
+		
+		<div>
+			<div class="projects">
+		
+				<table style="">
+					<tbody>
+						<tr class="row">
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../videos/sev-01.gif" alt="" width="400" height="250">
+							</td>
+							<td>
+							
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Details:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								This prototype is a first-person horror extraction game created in Unity. In this game, the player visits dark locations filled with monsters.<br/>
+								You can enter each mission with up to 4 squad members that you choose from 6 agents waiting in the hideout. At the start, you begin with 4 agents and can hire the remaining ones using money earned from missions.<br/>
+								The missions can have different objectives while taking place in the same location. Objectives can include finding an object, rescuing a person, or disarming a bomb.<br/>
+								In each location, random enemies or monsters can spawn, making it harder to reach the objective and creating a horror atmosphere together with the pitch-black interiors.<br/>
+								The player has one weapon and a flashlight to illuminate the dark hallways and rooms.
+							</td>
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Game Idea:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+							<td>
+								By completing various missions, the player earns money to recruit new agents or buy new weapons in order to complete further missions.<br/>
+								From the 6 recruited agents, you can start a mission with 4 of them.
+							</td>
+						</tr>
+								
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Movement:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								The player movement includes many features, that makes moving around the world feel responsive.<br/>
+								You can Move normally, jump, crouch, slide and mantling up ledges and through holes in a wall.<br/>
+								To convey the speed the player is moving in, the camera leans in the direction of movement. Jumping and falling also uses this feature.<br/>
+								<br/>
+								Crouching was accomplished by changing the player height and camera offset. A simple check was implemented for ceilings, so the player can't uncrouch with something above him.<br/>
+								To control the players actions, a trigger was added that changes the player state, to force, for example crouching or sliding.<br/>
+								<br/>
+								When sliding, velocity is added towards the down angel calculated with the normal of the surface.<br/>
+								To start sliding you must crouch while sprinting.<br/>
+								<br/>
+								Mantling tests the area in front of the player for a wall and the max height. when a wall with valid wall height is found, another test is started, that detects how thick the wall is.<br/>
+								If the wall is to thick or is a ledge, the celling height is checked so the player can stand where he lands.<br/>
+								when all test are finished two curves are created, that determine the path of the player and the height of the player.<br/>
+								The player is smoothly moved along the first path and the height is adjusted to the second curve.<br/>
+								To mantel, you jump while sprinting or jumping in the air.
+							</td>
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+					
+						<tr class="row">
+							<td colspan ="2">
+								<h2>AI:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+							<td>
+								The map is sections in rooms and doors. The AI has a memory feature that saves visited rooms and seen doors.<br/>
+								Signs can be assigned to a room, so when it is seen, the room is saved.
+							</td>
+						</tr>
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h3>Agent AI:</h3>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								Agents have a mood and objective based system that determines the behaviour.<br/>
+								It also is determined on other agents, enemies and the player<br/>
+								<br/>
+								The agent AI can do different actions, like follow the squad leader, explore the area, go alone, flee, retreat, stand ground or attack.<br/>
+								These actions are dependent on the AIs mood, like fear, or aggressivity.<br/>
+								<br/>
+								The Memories are saved per Agent over missions and sessions.<br/>
+							</td>
+							<td>
+							
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+							</td>
+							<td>
+								<h3>Enemy AI:</h3>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+							
+							</td>
+							<td>
+								The base enemy AI follows a simple route of randomly selected rooms.<br/>
+								When the target position is reached, a task is stared or it coses another target room.<br/>
+								the AI starts with a full memory of the location.<br/>
+							</td>
+						</tr>
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Gun-play:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								You can aim the gun and shoot it. Different guns have their own properties like max ammo or fire rate. <br/>
+								When a bullet hits a wall, a sound and a particle effect are spawned that correspond with the defined surface property of the material.<br/>
+								when the line of sight and the bullet trajectory don't end in the same location the target changes location.<br/>
+								the gun lowers when looking at a wall.
+							</td>
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Missions:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+							<td>
+								A mission can have a difficulty from 1 to 5 and a assigned map.<br/>
+								Divergent mission can have the same map but a divergent goal.<br/>
+								When selecting a mission the doors of the van open.
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Level Loading:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								The main game starts with a main scene called "AssetScene" that contains the player, the main light, the core game logic, the van, and the friendly NPCs.<br/>
+								After loading, the lobby is loaded, which contains the building mission selection scene and the AgentRecruitingManager.<br/>
+								When entering the van and pressing the start button, the van doors close and, once fully closed, the scene based on the selected mission is loaded while the lobby is unloaded.<br/>
+								Each level contains the building, the enemies, and the dynamically spawned objective.<br/>
+							</td>
+							<td>
+								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+							</td>
+						</tr>
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Assets:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<h3>Unity Asset Store:</h3>
+							</td>
+							<td>
+								<p>
+									<h3>Polyhaven:</h3>
+									<a href="https://polyhaven.com/a/rusty_metal_sheet" target="#">Rusty Metal Sheet</a> <br/>
+									<a href="https://polyhaven.com/a/painted_metal_shutter" target="#">Painted Metal Shutter</a> <br/>
+									<a href="https://polyhaven.com/a/concrete_wall_001" target="#">Concrete Wall 001</a> <br/>
+									<a href="https://polyhaven.com/a/gravel_concrete_03" target="#">Gravel Concrete 03</a> <br/>
+									<a href="https://polyhaven.com/a/square_floor" target="#">Square Floor</a> <br/>
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<footer>
+			2026 – Game Programming Portfolio
+		</footer>
+	</body>
+</html>

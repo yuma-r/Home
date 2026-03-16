@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Game Programming Portfolio – Yuma</title>
+		
+		<link rel="stylesheet" href="../Css/style.css">
+	</head>
+	
+	<body>
+		<div class="Nav">
+			<a href="../games/PSEV.html" class="NavContent">
+				<button>
+					<span>Project S.E.V</span>
+				</button>
+			</a>
+			<a href="../games/alb.html" class="NavContent">
+				<button>
+					<span>Always look back</span>
+				</button>
+			</a>
+			<a href="../games/TN.html" class="NavContent">
+				<button>
+					<span>Twisted Nights</span>
+				</button>
+			</a>
+			<a href="../games/batg.html" class="NavContent">
+				<button>
+					<span>Block across the gap</span>
+				</button>
+			</a>
+			<a href="../games/DC.html" class="NavContent">
+				<button>
+					<span>Desctop Craft</span>
+				</button>
+			</a>
+		</div>
+<br/>
+<br/>
+<br/>
+		<div>
+			<h2>Default Project</h2>
+		
+			<div class="projects">
+		
+				<table>
+					<tbody>
+						<tr class="row">
+							<td>
+								<a href="https://maker-studio.itch.io/batg" target="#">
+									<button>Block across the gap</button>
+								</a>
+								<br/>
+								<img src="../Images/batg-00.png" alt="" width="300" height="250">
+								<img src="../Images/batg-01.png" alt="" width="350" height="250">
+								<img src="../Images/batg-02.png" alt="" width="350" height="250">
+								<br/>
+								<video loop autoplay muted id="vid" src="../videos/batg-01.mp4" width="500" height="280"/>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<ul style="list-style-type:none;padding-left:0;">
+								<li><h2>Details:</h2></li>
+								</ul>
+								This game was created as part of a game jam (link) with the theme: Building Bridges. My idea was to develop a game in Unity where you stack blocks of different shapes so that they form a bridge between two platforms. If you succeed, you move on to the next level. The game contains 6 levels, with increasing complexity.
+								
+								<ul style="list-style-type:none;padding-left:0;">
+								<li><h2>Movement:</h2></li>
+								</ul>
+								Here the player character is a cube that can be moved using the arrow keys or WASD. The blocks are stacked using mouse movements. If the character touches the blocks, they can no longer be moved with the mouse so that the player does not have the possibility to “carry” the character to the goal using a block. There are checkpoints in the form of coins that must be activated before the level can be completed. If you fall into the fog, the level resets.
+								
+								<ul style="list-style-type:none;padding-left:0;">
+								<li><h2>Physics:</h2></li>
+								</ul>
+								The directional velocity of the grabbed object is manipulated so that it moves toward the mouse cursor. Gravity is disabled for grabbed objects so that the rotation can be adjusted manually.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<footer>
+			© 2026 – Game Programming Portfolio
+		</footer>
+	</body>
+</html>
