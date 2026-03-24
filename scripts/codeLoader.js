@@ -1,0 +1,22 @@
+async function loadScript() {
+    const container = document.getElementById("fullCode");
+    const content = document.getElementById("codeContent");
+    const btn = document.querySelector("button");
+
+    // toggle if already loaded
+    if (container.style.display === "block") {
+        container.style.display = "none";
+        btn.textContent = "Show Full Script";
+        return;
+    }
+
+    // only load once
+    if (!content.textContent) {
+        const response = await fetch("../scripts/Player.txt");
+        const text = await response.text();
+        content.textContent = text;
+    }
+
+    container.style.display = "block";
+    btn.textContent = "Hide Full Script";
+}

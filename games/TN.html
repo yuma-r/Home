@@ -15,6 +15,11 @@
 	</head>
 	
 	<body>
+		<script src="../scripts/Image_Manager.js"></script>
+		<div id="overlay" onclick="closeImage()">
+			<img id="overlay-img">
+		</div>
+		
 		<div class="Nav">
 			<a href="../games/PSEV.html" class="NavContent">
 				<button>
@@ -48,15 +53,18 @@
 		<div>
 			<h2>Twisted Nights</h2>
 		
+			Oct 24, 2025
 			<div class="projects">
 		
 				<table>
 					<tbody>
 						<tr class="row" style="background-image: url('Images/bg_01.png');">
 							<td>
-								<img src="../Images/TN-01.png" alt="" width="400" height="250">
-								<img src="../Images/TN-02.png" alt="" width="250" height="250">
-								<video loop autoplay muted id="vid" src="../videos/TN-01.mp4" width="250" height="250"/>
+								<img src="../Images/TN-01.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
+								<img src="../Images/TN-02.png" alt="" width="250" height="250" class="click-img" onclick="openImage(this)">
+							</td>
+							<td>
+								<video loop autoplay muted id="vid" src="../videos/TN-01.mp4" width="400" height="250"/>
 							</td>
 						</tr>
 						<tr class="row">
@@ -69,7 +77,7 @@
 								This is a point-and-click / sit-and-survive game made in Unity, inspired by the horror game series Five Nights at Freddy’s.
 							</td>
 							<td>
-								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+								<img src="../Images/TN-01.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 						<tr class="row">
@@ -79,7 +87,7 @@
 						</tr>
 						<tr class="row">
 							<td>
-								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+								<img src="../Images/TN-01.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
 								You take on your first night shift in a restaurant where robots provide the entertainment. The goal is to survive the night without being killed by the robots.
@@ -99,7 +107,7 @@
 								
 							</td>
 							<td>
-								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+								<img src="../Images/TN-01.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 						<tr class="row">
@@ -109,7 +117,7 @@
 						</tr>
 						<tr class="row">
 							<td>
-								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+								<img src="../Images/TN-01.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
 								Two camera systems each display a camera feed on a monitor. The cameras can be switched by clicking buttons on the displayed floor plan. Another mechanic is recharging and swapping batteries in a flashlight. One enemy can be driven away by the beam of light, while the other enemy kills you.
@@ -127,7 +135,7 @@
 								
 							</td>
 							<td>
-								<img src="../Images/TN-01.png" alt="" width="400" height="250">
+								<img src="../Images/TN-01.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 						<tr class="row">

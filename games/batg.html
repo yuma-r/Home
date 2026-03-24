@@ -15,6 +15,11 @@
 	</head>
 	
 	<body>
+		<script src="../scripts/Image_Manager.js"></script>
+		<div id="overlay" onclick="closeImage()">
+			<img id="overlay-img">
+		</div>
+		
 		<div class="Nav">
 			<a href="../games/PSEV.html" class="NavContent">
 				<button>
@@ -48,6 +53,7 @@
 		<div>
 			<h2>Block across the gap</h2>
 		
+			Feb 21, 2026
 			<div class="projects">
 		
 				<table>
@@ -58,9 +64,9 @@
 									<button>Block across the gap</button>
 								</a>
 								<br/>
-								<img src="../Images/batg-00.png" alt="" width="300" height="250">
-								<img src="../Images/batg-01.png" alt="" width="350" height="250">
-								<img src="../Images/batg-02.png" alt="" width="350" height="250">
+								<img src="../Images/batg-00.png" alt="" width="300" height="250" class="click-img" onclick="openImage(this)">
+								<img src="../Images/batg-01.png" alt="" width="350" height="250" class="click-img" onclick="openImage(this)">
+								<img src="../Images/batg-02.png" alt="" width="350" height="250" class="click-img" onclick="openImage(this)">
 								<br/>
 								<video loop autoplay muted id="vid" src="../videos/batg-01.mp4" width="500" height="280"/>
 							</td>

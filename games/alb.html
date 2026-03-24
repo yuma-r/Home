@@ -15,6 +15,15 @@
 	</head>
 	
 	<body>
+		<script src="../scripts/Image_Manager.js"></script>
+		<div id="overlay" onclick="closeImage()">
+			<img id="overlay-img">
+		</div>
+		
+		<div id="overlay" onclick="closeImage()">
+			<img id="overlay-img">
+		</div>
+		
 		<div class="Nav">
 			<a href="../games/PSEV.html" class="NavContent">
 				<button>
@@ -45,65 +54,159 @@
 <br/>
 <br/>
 <br/>
-		<div style="background-image: url('../Images/bg_02.png');">
-			<header style="background-image: url('../Images/Logo_big.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
-					<a href="../index.html">
-					<h3>Always look back</h3>
-					<br/>
-			</header>	
-			<br/>
-		</div>
 		
 		<div>
 			<div class="projects">
-		
 				<table style="background-image: url('../Images/bg_02.png');">
 					<tbody>
-						<tr class="row">
+						<tr>
+							<td colspan ="2">
+								<header style="background-image: url('../Images/Logo_big.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
+									<br/>
+									<br/>
+									<br/>
+									<br/>
+									<br/>
+								</header>
+								Feb 21, 2024
+							</td>
+						</tr>
+						<tr class="row"">
+							<td colspan ="1" style="text-align:left;">
+								<img src="../Images/alb-01.png" alt="" width="450" height="250" class="click-img" onclick="openImage(this)">
+								<img src="../Images/alb-03.png" alt="" width="450" height="250" class="click-img" onclick="openImage(this)">
+							</td>
 							<td>
-								<img src="../Images/alb-01.png" alt="" width="400" height="250">
-								<img src="../Images/alb-02.png" alt="" width="400" height="250">
-								<img src="../Images/alb-03.png" alt="" width="400" height="250">
-								<img src="../videos/ALB_01.gif" alt="" width="400" height="250">
-								<img src="../videos/ALB_02.gif" alt="" width="400" height="250">
+								This was the first Project I made, that uses post processing. I liked the Bloom effect on the lights so mutch,<br/>
+								that i designed the enemy around it.<br/>
+								It also includes my first animations i ever used and made.
+								The particle effect used for the Stun-mine was the first time<br/>
+								i played around with particle systems and it turned out not bad.
+								
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<br/>
+								<br/>
+								<h2>Details:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td style="width:50%;">
+								This short horror game demo was created with Unity.<br/>
+								The game idea is that a monster only moves, when it is not within the player’s field of view.<br/>
+								The location is a abandoned warehouse.<br/>
+								<br/>
+								The player takes on the role of an intruder, who has triggered the alarm system. This alarm system consists<br/>
+								of a humanoid robot, with a spotlight as it's head that pursues the intruder.<br/>
+								The goal is to escape by collecting keycards and opening gates in order to reach the exit.
+							</td>
+							<td>
+								<img src="../videos/ALB_02.gif" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Movement:</h2>
 							</td>
 						</tr>
 						<tr class="row">
 							<td>
-								<ul style="list-style-type:none;padding-left:0;">
-								<li><h2>Details:</h2></li>
-								</ul>
-								This short horror game demo was created with Unity.
-								The game idea is that a monster only moves when it is not within the player’s field of view. The game takes place in an abandoned warehouse. The player takes on the role of an intruder who has triggered the alarm system. This alarm system consists of a humanoid robot with a spotlight as its head that pursues the intruder. The goal is to escape by collecting keycards and opening gates in order to reach the exit.
-								
-								<ul style="list-style-type:none;padding-left:0;">
-								<li><h2>Movement:</h2></li>
-								</ul>
-								The player’s movement is controlled with WASD. Additionally, you can sprint with Shift and crouch with CTRL.
-								
-								<ul style="list-style-type:none;padding-left:0;">
-								<li><h2>Difficulty:</h2></li>
-								</ul>
-								The crouching movement was difficult to implement because when the player stands up, they should not pass through objects above them.
-								
-								<ul style="list-style-type:none;padding-left:0;">
-								<li><h2>Items:</h2></li>
-								</ul>
-								Items can be picked up with E, dropped with Q, or thrown by holding Q. The player can have up to two items in the inventory at the same time, which can be switched between. Some items can be activated with a left click. Keycards are not stored in the inventory but are saved separately.
-								
-								<ul style="list-style-type:none;padding-left:0;">
-								<li><h2>AI:</h2></li>
-								</ul>
-								The enemy always takes the player as its target position and moves toward them. If the corners of the bounding box are within the camera’s field of view, the enemy stops moving. The longer the enemy is being looked at, the more aggressive it becomes. If it is looked at for more than 12 seconds, it teleports to another room.
-								
-								<ul style="list-style-type:none;padding-left:0;">
-								<li><h2>Achievements</h2></li>
-								</ul>
-								<h2>Assets</h2>
+								<img src="../videos/ALB_04.gif" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
+							</td>
+							<td>
+								The player’s movement is controlled with WASD.<br/>
+								Additionally, you can sprint with Shift and crouch with CTRL.
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Difficulty:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								The crouching movement was difficult to implement because when the player stands up,<br/>
+								they should not pass through objects above them.
+							</td>
+							<td>
+								<img src="../Images/alb-05.png" alt="" width="400" height="300" class="click-img" onclick="openImage(this)">
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Items:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../Images/alb-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
+							</td>
+							<td>
+								Items can be picked up with E, dropped with Q, or thrown by holding Q. The player can have up to two items in the inventory at the same time, which can be switched between.<br/>
+								Some items can be activated with a left click. Keycards are not stored in the inventory but are saved separately.
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>AI:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								The enemy always takes the player as its target position and moves toward them.<br/>
+								If the corners of the bounding box are within the camera’s field of view, the enemy stops moving.<br/>
+								The longer the enemy is being looked at, the more aggressive it becomes. If it is looked at<br/>
+								for more than 12 seconds, it teleports to another room.
+							</td>
+							<td>
+								<img src="../videos/ALB_01.gif" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Achievements:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
+								<img src="../videos/ALB_03.gif" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
+							</td>
+							<td>
+								A achievement system was made, that looks like the system Steam uses.<br/>
+								The user can unlock achievements by completing a task. In the demo the player is able to complete 5 different tasks. <br/>
+								A achievement can have a progress bar, that indicates, how many times the task must be completed.
+							</td>
+						</tr>
+						
+						
+						<tr class="row">
+							<td colspan ="2">
+								<h2>Assets:</h2>
+							</td>
+						</tr>
+						<tr class="row">
+							<td>
 								<p>
 									<h3>Unity Asset Store:</h3>
 									<a href="https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/pixelation-65554" target="#">fullscreen camera effects [Dmitry Timofeev]</a> <br/>
 									<a href="https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488" target="#">Quick Outline [Chris Nolet]</a> <br/>
+							</td>
+							<td>
+								<p>
 									<h3>Polyhaven:</h3>
 									<a href="https://polyhaven.com/a/rusty_metal_sheet" target="#">Rusty Metal Sheet</a> <br/>
 									<a href="https://polyhaven.com/a/painted_metal_shutter" target="#">Painted Metal Shutter</a> <br/>

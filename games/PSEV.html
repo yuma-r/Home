@@ -15,6 +15,13 @@
 	</head>
 	
 	<body>
+		<script src="../scripts/Image_Manager.js"></script>
+		<script src="../scripts/codeLoader.js"></script>
+		
+		<div id="overlay" onclick="closeImage()">
+			<img id="overlay-img">
+		</div>
+		
 		<div class="Nav">
 			<a href="../games/PSEV.html" class="NavContent">
 				<button>
@@ -47,8 +54,6 @@
 <br/>
 		<div style="">
 			<header style="background-image: url('../Images/psev-01.png'); background-size: contain; background-position: center center; background-repeat: no-repeat;">
-					<a href="../index.html">
-						<button>Go Home</button>
 					</a>
 					<a href="https://maker-studio.itch.io/project-s-e-v" target="#">
 						<button>Open page</button>
@@ -64,14 +69,29 @@
 		</div>
 		
 		<div>
+			May 23, 2025
+			
+			<pre>
+				<code>
+					public class Player {
+						void Start() {
+							Debug.Log("Game started...");
+						}
+					}
+				</code>
+			</pre>
+			
+			<button onclick="loadScript()">Show Full Script</button>
+			
+			<pre id="fullCode" style="display: none;"><code id="codeContent"></code></pre>
 			<div class="projects">
 		
 				<table style="">
 					<tbody>
 						<tr class="row">
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
-								<img src="../videos/sev-01.gif" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" width="400" height="250" class="click-img" onclick="openImage(this)">
+								<img src="../videos/sev-01.gif" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
 							
@@ -91,7 +111,7 @@
 								The player has one weapon and a flashlight to illuminate the dark hallways and rooms.
 							</td>
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 						<tr class="row">
@@ -101,7 +121,7 @@
 						</tr>
 						<tr class="row">
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
 								By completing various missions, the player earns money to recruit new agents or buy new weapons in order to complete further missions.<br/>
@@ -133,7 +153,7 @@
 								To mantel, you jump while sprinting or jumping in the air.
 							</td>
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 					
@@ -144,7 +164,7 @@
 						</tr>
 						<tr class="row">
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
 								The map is sections in rooms and doors. The AI has a memory feature that saves visited rooms and seen doors.<br/>
@@ -202,7 +222,7 @@
 								the gun lowers when looking at a wall.
 							</td>
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 						<tr class="row">
@@ -212,7 +232,7 @@
 						</tr>
 						<tr class="row">
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
 								A mission can have a difficulty from 1 to 5 and a assigned map.<br/>
@@ -233,7 +253,7 @@
 								Each level contains the building, the enemies, and the dynamically spawned objective.<br/>
 							</td>
 							<td>
-								<img src="../Images/psev-02.png" alt="" width="400" height="250">
+								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 						</tr>
 						<tr class="row">
@@ -243,16 +263,55 @@
 						</tr>
 						<tr class="row">
 							<td>
-								<h3>Unity Asset Store:</h3>
+								<h3>Mixamo:</h3>
+								<a href="https://www.mixamo.com/#/?type=Character" target="#">[Link]</a><br/>
+								MAYNARD<br/>
+								DRAKE<br/>
+								ALIEN SOLDIER<br/>
+								ZLORP<br/>
+								PIRATE BY P.KONSTANTINOV<br/>
+								WHITECLOWN N HALLIN<br/>
+								CH35_NONPBR<br/>
+								SWAT GUY<br/>
+								ALEX<br/>
+								OLIVIA<br/>
+								CH23_NONPBR<br/>
+								JOE<br/>
+								CH50_NONPBR
 							</td>
 							<td>
 								<p>
 									<h3>Polyhaven:</h3>
-									<a href="https://polyhaven.com/a/rusty_metal_sheet" target="#">Rusty Metal Sheet</a> <br/>
-									<a href="https://polyhaven.com/a/painted_metal_shutter" target="#">Painted Metal Shutter</a> <br/>
-									<a href="https://polyhaven.com/a/concrete_wall_001" target="#">Concrete Wall 001</a> <br/>
+									Materials:<br/>
 									<a href="https://polyhaven.com/a/gravel_concrete_03" target="#">Gravel Concrete 03</a> <br/>
-									<a href="https://polyhaven.com/a/square_floor" target="#">Square Floor</a> <br/>
+									<a href="https://polyhaven.com/a/concrete_wall_006" target="#">Concrete Wall 006</a> <br/>
+									<a href="https://polyhaven.com/a/forrest_ground_01" target="#">Forest Ground 01</a> <br/>
+									<a href="https://polyhaven.com/a/rusty_metal_05" target="#">Rusty Metal 05</a> <br/>
+									<a href="https://polyhaven.com/a/rusty_metal_04" target="#">Rusty Metal 04</a> <br/>
+									<a href="https://polyhaven.com/a/asphalt_pit_lane" target="#">Asphalt Pit Lane</a> <br/>
+									<a href="https://polyhaven.com/a/metal_plate" target="#">Metal Plate</a> <br/>
+									<br/>
+									Models:<br/>
+									<a href="https://polyhaven.com/a/searsia_burchellii" target="#">Searsia Burchellii</a> <br/>
+									<a href="https://polyhaven.com/a/boulder_01" target="#">Boulder 01</a> <br/>
+									<a href="https://polyhaven.com/a/othonna_cerarioides" target="#">Othonna Cerarioides</a> <br/>
+									<a href="https://polyhaven.com/a/namaqualand_boulder_02" target="#">Namaqualand Boulder 02</a><br/>
+									<a href="https://polyhaven.com/a/rock_moss_set_02" target="#">Rock Moss Set 02</a><br/>
+									<a href="https://polyhaven.com/a/wild_rooibos_bush" target="#">Wild Rooibos Bush</a><br/>
+									<a href="https://polyhaven.com/a/searsia_burchellii" target="#">Searsia Burchellii</a><br/>
+									<a href="https://polyhaven.com/a/searsia_lucida" target="#">Searsia Lucida</a><br/>
+									<a href="https://polyhaven.com/a/wooden_table_02" target="#">Wooden Table 02</a><br/>
+									<a href="https://polyhaven.com/a/barrel_03" target="#">Barrel 03</a><br/>
+									<a href="https://polyhaven.com/a/concrete_road_barrier" target="#">Concrete Road Barrier</a><br/>
+									<a href="https://polyhaven.com/a/covered_car" target="#">Covered Car</a><br/>
+									<a href="https://polyhaven.com/a/modern_arm_chair_01" target="#">Modern Arm Chair 01</a><br/>
+									<a href="https://polyhaven.com/a/Ottoman_01" target="#">Ottoman 01</a><br/>
+									<a href="https://polyhaven.com/a/plastic_monobloc_chair_01" target="#">Plastic Monobloc Chair 01</a><br/>
+									<a href="https://polyhaven.com/a/rollershutter_window_01" target="#">Rollershutter Window 01</a><br/>
+									<a href="https://polyhaven.com/a/SchoolDesk_01" target="#">School Desk 01</a><br/>
+									<a href="https://polyhaven.com/a/Sofa_01" target="#">Sofa 01</a><br/>
+									<a href="https://polyhaven.com/a/utility_box_01" target="#">Utility Box 01</a><br/>
+									<a href="https://polyhaven.com/a/wooden_picnic_table" target="#">Wooden Picnic Table</a>
 								</p>
 							</td>
 						</tr>
