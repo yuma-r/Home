@@ -1,8 +1,10 @@
 async function loadScript() {
     const container = document.getElementById("fullCode");
     const content = document.getElementById("codeContent");
-    const btn = document.querySelector("button");
+    const btn = document.getElementById("ScriptButton");
 
+//<button onclick="loadScript()">Show Script Example</button>
+    
     // toggle if already loaded
     if (container.style.display === "block") {
         container.style.display = "none";
