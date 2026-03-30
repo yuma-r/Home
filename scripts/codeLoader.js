@@ -8,7 +8,7 @@ async function loadScript() {
     // toggle if already loaded
     if (container.style.display === "block") {
         container.style.display = "none";
-        btn.textContent = "Show Full Script";
+        btn.textContent = "Show Script Example";
         return;
     }
 
@@ -20,5 +20,5 @@ async function loadScript() {
     }
 
     container.style.display = "block";
-    btn.textContent = "Hide Full Script";
+    btn.textContent = "Hide Script Example";
 }
