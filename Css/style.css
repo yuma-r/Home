@@ -170,6 +170,7 @@ button:hover span {
 a.NavContent {
 	margin-left: 3%;
 	margin-right: 3%;
+	text-decoration: none;
 }
 
 button.Info{
