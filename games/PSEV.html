@@ -98,10 +98,10 @@
 						</tr>
 						<tr class="row">
 							<td>
-								This prototype is a first-person horror extraction game created in Unity. In this game, the player visits dark locations filled with monsters.<br/>
-								You can enter each mission with up to 4 squad members that you choose from 6 agents waiting in the hideout. At the start, you begin with 4 agents and can hire the remaining ones using money earned from missions.<br/>
-								The missions can have different objectives while taking place in the same location. Objectives can include finding an object, rescuing a person, or disarming a bomb.<br/>
-								In each location, random enemies or monsters can spawn, making it harder to reach the objective and creating a horror atmosphere together with the pitch-black interiors.<br/>
+								This prototype is a first-person horror extraction game created in Unity. In this game, the player visits dark locations, filled with monsters.<br/>
+								You can enter each mission with up to 4 squad members, that you choose from 6 agents waiting in the hideout. At the start, you begin with 4 agents and can hire the remaining ones using money, earned from missions.<br/>
+								The missions can have different objectives, while taking place in the same location. Objectives can include finding an object, rescuing a person, or disarming a bomb.<br/>
+								In each location random enemies or monsters can spawn, making it harder to reach the objective and creating a horror atmosphere, together with the pitch-black interiors.<br/>
 								The player has one weapon and a flashlight to illuminate the dark hallways and rooms.
 							</td>
 							<td>
@@ -118,7 +118,7 @@
 								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
 							</td>
 							<td>
-								By completing various missions, the player earns money to recruit new agents or buy new weapons in order to complete further missions.<br/>
+								By completing various missions, the player earns money to recruit new agents or buy new weapons, in order to complete further missions.<br/>
 								From the 6 recruited agents, you can start a mission with 4 of them.
 							</td>
 						</tr>
@@ -131,18 +131,18 @@
 						<tr class="row">
 							<td>
 								The player movement includes many features, that makes moving around the world feel responsive.<br/>
-								You can Move normally, jump, crouch, slide and mantling up ledges and through holes in a wall.<br/>
-								To convey the speed the player is moving in, the camera leans in the direction of movement. Jumping and falling also uses this feature.<br/>
+								You can move normally, jump, crouch, slide and mantling up ledges and through holes in a wall.<br/>
+								To convey the speed, the camera leans in the direction of movement. Jumping and falling also uses this feature.<br/>
 								<br/>
 								Crouching was accomplished by changing the player height and camera offset. A simple check was implemented for ceilings, so the player can't uncrouch with something above him.<br/>
-								To control the players actions, a trigger was added that changes the player state, to force, for example crouching or sliding.<br/>
+								To control the players actions, a trigger was added, that changes the player state, to force, for example crouching or sliding.<br/>
 								<br/>
 								When sliding, velocity is added towards the down angel calculated with the normal of the surface.<br/>
 								To start sliding you must crouch while sprinting.<br/>
 								<br/>
-								Mantling tests the area in front of the player for a wall and the max height. when a wall with valid wall height is found, another test is started, that detects how thick the wall is.<br/>
-								If the wall is to thick or is a ledge, the celling height is checked so the player can stand where he lands.<br/>
-								when all test are finished two curves are created, that determine the path of the player and the height of the player.<br/>
+								Mantling tests the area in front of the player for a wall and the max height. When a wall with valid wall height is found, another test is started, that detects how thick the wall is.<br/>
+								If the wall is to thick or is a ledge, the celling height is checked, so the player can stand where he lands.<br/>
+								When all test are finished, two curves are created, that determine the path of the player and the height of the player.<br/>
 								The player is smoothly moved along the first path and the height is adjusted to the second curve.<br/>
 								To mantel, you jump while sprinting or jumping in the air.
 							</td>
@@ -179,7 +179,7 @@
 								The agent AI can do different actions, like follow the squad leader, explore the area, go alone, flee, retreat, stand ground or attack.<br/>
 								These actions are dependent on the AIs mood, like fear, or aggressivity.<br/>
 								<br/>
-								The Memories are saved per Agent over missions and sessions.<br/>
+								The Memories are saved per agent over missions and sessions.<br/>
 							</td>
 							<td>
 							
@@ -210,10 +210,10 @@
 						</tr>
 						<tr class="row">
 							<td>
-								You can aim the gun and shoot it. Different guns have their own properties like max ammo or fire rate. <br/>
+								You can aim the gun and shoot it. Different guns have their own properties, like max ammo or fire rate. <br/>
 								When a bullet hits a wall, a sound and a particle effect are spawned that correspond with the defined surface property of the material.<br/>
 								when the line of sight and the bullet trajectory don't end in the same location the target changes location.<br/>
-								the gun lowers when looking at a wall.
+								The gun lowers when looking at a wall.
 							</td>
 							<td>
 								<img src="../Images/psev-02.png" alt="" width="400" height="250" class="click-img" onclick="openImage(this)">
@@ -230,7 +230,7 @@
 							</td>
 							<td>
 								A mission can have a difficulty from 1 to 5 and a assigned map.<br/>
-								Divergent mission can have the same map but a divergent goal.<br/>
+								Divergent mission can have the same map, but a divergent goal.<br/>
 								When selecting a mission the doors of the van open.
 							</td>
 						</tr>
@@ -243,7 +243,7 @@
 							<td>
 								The main game starts with a main scene called "AssetScene" that contains the player, the main light, the core game logic, the van, and the friendly NPCs.<br/>
 								After loading, the lobby is loaded, which contains the building mission selection scene and the AgentRecruitingManager.<br/>
-								When entering the van and pressing the start button, the van doors close and, once fully closed, the scene based on the selected mission is loaded while the lobby is unloaded.<br/>
+								When entering the van and pressing the start button, the van doors close and once fully closed, the scene based on the selected mission is loaded while the lobby is unloaded.<br/>
 								Each level contains the building, the enemies, and the dynamically spawned objective.<br/>
 							</td>
 							<td>
