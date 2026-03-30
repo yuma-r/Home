@@ -17,6 +17,12 @@ async function loadScript() {
         const response = await fetch("../scripts/Player.txt");
         const text = await response.text();
         content.textContent = text;
+
+        const button = document.createElement("button");
+        button.textContent = "Hide Script Example";
+        button.addEventListener("click", loadScript());
+    
+        content.appendChild(button);
     }
 
     container.style.display = "block";
