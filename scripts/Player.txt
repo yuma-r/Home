@@ -292,6 +292,3 @@ public class JumpGap
         this.globalWallHight = globalWallHight;
     }
 }
-
-
-<button onclick="loadScript()">Show Script Example</button>
