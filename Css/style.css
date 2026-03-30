@@ -167,10 +167,12 @@ button:hover span {
 	z-index: 4000;
 }
 
+.NavContent{
+	text-decoration: none;
+}
 a.NavContent {
 	margin-left: 3%;
 	margin-right: 3%;
-	text-decoration: none;
 }
 
 button.Info{
