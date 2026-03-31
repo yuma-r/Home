@@ -18,11 +18,8 @@ async function loadScript() {
         const text = await response.text();
         content.textContent = text;
 
-        const button = document.createElement("button");
-        button.textContent = "Hide Script Example";
-        button.onclick = function() { loadScript(); };
     //onclick="loadScript()"
-        content.appendChild(button);
+        content.appendChild(btn.cloneNode(true));
     }
 
     container.style.display = "block";
