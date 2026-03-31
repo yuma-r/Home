@@ -19,9 +19,7 @@ async function loadScript() {
         content.textContent = text;
 
     //onclick="loadScript()"
-        var b = tn.cloneNode(true);
-        btn.textContent = "Hide";
-        content.appendChild(b);
+        content.appendChild(tn.cloneNode(true));
     }
 
     container.style.display = "block";
