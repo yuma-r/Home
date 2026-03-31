@@ -20,8 +20,8 @@ async function loadScript() {
 
         const button = document.createElement("button");
         button.textContent = "Hide Script Example";
-        button.addEventListener("click", loadScript());
-    
+        button.onclick = loadScript();
+    //onclick="loadScript()"
         content.appendChild(button);
     }
 
