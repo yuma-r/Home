@@ -19,7 +19,9 @@ async function loadScript() {
         content.textContent = text;
 
     //onclick="loadScript()"
-        content.appendChild(btn.cloneNode(true));
+        var b = tn.cloneNode(true);
+        btn.textContent = "Hide";
+        content.appendChild(b);
     }
 
     container.style.display = "block";
